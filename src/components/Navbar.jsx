@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/Image/logo.png';
+import logo from '../assets/images/logo.png';
 
-export default function Navbar() {
+const Navbar = () => {
   const linkClass = ({ isActive }) =>
     isActive
       ? 'bg-black text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2'
@@ -37,3 +37,4 @@ export default function Navbar() {
     </nav>
   );
 };
+export default Navbar;
